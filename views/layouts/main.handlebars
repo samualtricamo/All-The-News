@@ -1,1 +1,31 @@
- 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <link rel=stylesheet href="/public/css/style.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Scrape</title>
+ </head>
+ <body>
+     
+<header>
+		<a href="/"><div id="sitename">NYT Scraper</div></a>
+		<a href="/"><button id="all-articles">All Articles</button></a>
+		<a href="/saved"><button id="saved-articles">Saved Articles</button></a>
+		<form action="/scrape" method="GET">
+			<button type="submit" id="refresh-articles">Scrape For Newest Articles</button>
+		</form>
+		<form action="/search" method="POST">
+			<button type="submit" id="search-submit">Submit</button>
+			<input type="text" name="search" placeholder="Search for articles" id="search-input">
+		</form>
+	</header>
+
+
+
+
+     <script src="/public/javascript/app.js"></script>
+ </body>
+ </html>
