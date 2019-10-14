@@ -5,7 +5,7 @@ module.exports = {
     get: function(data, cb) {
         Note.find({
             _headlineId: data._id
-        }, cb):
+        }, cb);
     },
     save: function(data, cb) {
         var newNote = {

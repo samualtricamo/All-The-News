@@ -73,7 +73,7 @@ function renderEmpty() {
 
 function handleArticleSave() {
 
-    var articleToSave = $(this.parents(".panel").data();
+    var articleToSave = $(this).parents(".panel").data();
     articleToSave.saved = true;
 
     $.ajax({
@@ -83,9 +83,8 @@ function handleArticleSave() {
     })
     .then(function(data) {
 
-        If (data.ok) {
+        if (data.ok) {
             initPage();
-
         }
     });
 }
